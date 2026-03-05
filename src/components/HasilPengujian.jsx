@@ -71,8 +71,8 @@ function MultiInput({ values, onChange }) {
         onChange(next)
     }
 
-    // When more than 3 inputs, show as horizontal scrollable row
-    const manyInputs = values.length > 3
+    // Always show as horizontal scrollable row
+    const manyInputs = true
 
     if (manyInputs) {
         return (
