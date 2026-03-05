@@ -2,7 +2,6 @@ import { useState, useCallback } from 'react'
 import HasilPengujian from './HasilPengujian'
 import FrekuensiPengujian from './FrekuensiPengujian'
 
-// Auto-filled demo data
 const AUTO_DATA = {
     noBatch: 'P.BE-FB28.7C',
     noSpk: 'RPOC-AAP-2602-02992',
@@ -36,7 +35,6 @@ export default function LogbookForm() {
 
     return (
         <div className="form-card">
-            {/* Header */}
             <div className="form-card-header">
                 <span className="form-card-title">Form Logbook QC</span>
                 <div className="form-card-actions">
@@ -45,7 +43,6 @@ export default function LogbookForm() {
                 </div>
             </div>
 
-            {/* Auto-filled fields */}
             <div className="form-row">
                 <div className="form-label">No. Batch</div>
                 <div className="form-value">
@@ -70,11 +67,7 @@ export default function LogbookForm() {
             <div className="form-row">
                 <div className="form-label">Kategori</div>
                 <div className="form-value">
-                    <select
-                        className="form-select"
-                        value={kategori}
-                        onChange={(e) => setKategori(e.target.value)}
-                    >
+                    <select className="form-select" value={kategori} onChange={(e) => setKategori(e.target.value)}>
                         <option value="Cat WB">Cat WB</option>
                         <option value="Waterbased">Waterbased</option>
                         <option value="Intermediate (Pasta)">Intermediate (Pasta)</option>
@@ -129,7 +122,6 @@ export default function LogbookForm() {
                 </div>
             </div>
 
-            {/* Keterangan Sampel - Dropdown */}
             <div className="form-row">
                 <div className="form-label">Keterangan Sampel</div>
                 <div className="form-value">
@@ -145,7 +137,6 @@ export default function LogbookForm() {
                 </div>
             </div>
 
-            {/* Keterangan Konsesi - conditional */}
             <div className="form-row">
                 <div className="form-label">Keterangan Konsesi</div>
                 <div className="form-value">
@@ -162,7 +153,6 @@ export default function LogbookForm() {
                 </div>
             </div>
 
-            {/* Keterangan Analis */}
             <div className="form-row">
                 <div className="form-label">Keterangan Analis</div>
                 <div className="form-value">
@@ -175,7 +165,6 @@ export default function LogbookForm() {
                 </div>
             </div>
 
-            {/* Tabs */}
             <div className="tabs-wrapper">
                 <div className="tabs-bar">
                     <button

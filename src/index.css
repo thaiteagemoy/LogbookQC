@@ -524,6 +524,17 @@ body {
     padding: 6px 12px;
 }
 
+/* Frekuensi input inside hp-grid (new layout matching HasilPengujian) */
+.freq-input-wrap {
+    width: 100%;
+}
+
+.freq-input-wrap .form-input {
+    padding: 4px 8px;
+    font-size: 12px;
+    text-align: right;
+}
+
 /* Footer */
 .app-footer {
     padding: 10px 20px;
